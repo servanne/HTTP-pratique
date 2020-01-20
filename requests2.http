@@ -1,0 +1,36 @@
+### GET wilders 
+GET https://http-practice.herokuapp.com/wilders
+
+### GET wilders PHP et numero page
+GET https://http-practice.herokuapp.com/wilders?language=PHP&page=3
+
+### POST format URL-encoded
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=TomTom%20et%20Nana&language=PHP
+
+### POST format application/json 
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+    "name": "Tom et Jerry",
+    "language": "PHP"
+}
+
+### GET wilders Id 1757
+https://http-practice.herokuapp.com/wilders/1757
+
+### PUT format application/json 
+PUT https://http-practice.herokuapp.com/wilders/1757
+Content-Type: application/json
+
+{
+   "name": "Jeanne et Serge",
+  "language": "PHP"
+}
+
+### DELETE format application/json 
+DELETE https://http-practice.herokuapp.com/wilders/1757
+
